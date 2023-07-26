@@ -12,6 +12,7 @@ int _putchar(char c)
 {
 	return (buffer(c));
 }
+
 /* BY ROUALI AND MAMAZZAL */
 
 /**
@@ -20,10 +21,10 @@ int _putchar(char c)
  * Return: 1 if (Success) and -1 if (UnSuccess)
 **/
 
-int	buffer(char c)
+int buffer(char c)
 {
-	static char	buff[BUFFER_SIZE];
-	static int	i;
+	static char buff[BUFFER_SIZE];
+	static int i;
 
 	if (c == -1 || i == BUFFER_SIZE)
 	{

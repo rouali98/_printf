@@ -9,29 +9,27 @@
  * Return: size of arguments plus total size of string
 */
 
-int	checker(const char *s, va_list list)
+int checker(const char *s, va_list list)
 {
-	int	size;
-	int	i;
-	int	deffer;
+	int size = 0;
+	int i = 0;
 
-	size = 0;
-	i = 0;
 	while (s[i] != '\0')
 	{
 		if (s[i] == '%')
 		{
-			deffer = check(s, list, &i);
+			int deffer = check(s, list, &i);
 			if (deffer == -1)
 				return (-1);
 			size += deffer;
-			continue;
 		}
-		_putchar(s[i]);
-		size++;
+		else
+		{
+			_putchar(s[i]);
+			size++;
+		}
 		i++;
 	}
-
 	return (size);
 }
 
