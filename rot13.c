@@ -1,12 +1,12 @@
 #include "main.h"
 
 /* BY ROUALI AND MAMAZZAL */
-
 /**
  * _rot13 - function help to crypt rot13
  * @s: string
  * Return: string
  */
+
 
 int _rot13(char *s)
 {
@@ -29,13 +29,14 @@ int _rot13(char *s)
 
 }
 
-/* BY ROUALI AND MAMAZZAL */
 
+/* BY ROUALI AND MAMAZZAL */
 /**
  * _print_rot13 - main function of rot13
  * @list: list
  * Return: len of string
-*/
+ */
+
 
 int _print_rot13(va_list list)
 {
@@ -45,6 +46,7 @@ int _print_rot13(va_list list)
 	char R[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	p = va_arg(list, char *);
+
 	for (j = 0; p[j]; j++)
 	{
 		if (p[j] < 'A' || (p[j] > 'Z' && p[j] < 'a') || p[j] > 'z')
@@ -58,6 +60,7 @@ int _print_rot13(va_list list)
 			}
 		}
 	}
+
 	return (j);
 }
 

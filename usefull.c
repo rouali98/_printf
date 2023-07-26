@@ -1,13 +1,12 @@
 #include "main.h"
 
 /* BY ROUALI AND MAMAZZAL */
-
 /**
  * _strlen - Calculate the len of a string
  * @s: string
  *
  * Return: len
-**/
+ **/
 
 int _strlen(const char *s)
 {
@@ -15,17 +14,16 @@ int _strlen(const char *s)
 
 	while (s[i] != '\0')
 		i++;
+
 	return (i);
 }
-
 /* BY ROUALI AND MAMAZZAL */
-
 /**
  * print - print char
  * @s: string
  *
  * Return: String len
-*/
+ */
 
 int print(char *s)
 {
@@ -36,48 +34,49 @@ int print(char *s)
 		_putchar(s[i]);
 		i++;
 	}
+
 	return (i);
 }
-
 /* BY ROUALI AND MAMAZZAL */
-
 /**
  * _put_string - function print string
  *
  * @str: string
  *
  * Return: i
-*/
+ */
 
 int _put_string(char *str)
 {
-	int i = 0;
+	register int i;
 
-	while (str[i] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		_putchar(str[i]);
-		i++;
 	}
-	return i;
+
+	return (i);
 }
 
 /* BY ROUALI AND MAMAZZAL */
-
 /**
  * _is_lower - funct check if is lower case or not
  *
  * @c: char
  *
  * Return: 1 or 0
-*/
+ */
+
+
 
 int _is_lower(char c)
 {
 	return (c >= 'a' && c <= 'z');
 }
 
-/* BY ROUALI AND MAMAZZAL */
 
+
+/* BY ROUALI AND MAMAZZAL */
 /**
  * *_to_upper - funct make change string to upper case
  *
@@ -85,6 +84,8 @@ int _is_lower(char c)
  *
  * Return: uppercase string
  */
+
+
 
 char *_to_upper(char *s)
 {
@@ -97,5 +98,6 @@ char *_to_upper(char *s)
 			s[i] = s[i] - 32;
 		}
 	}
+
 	return (s);
 }

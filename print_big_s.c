@@ -1,7 +1,6 @@
 #include "main.h"
 
 /* BY ROUALI AND MAMAZZAL */
-
 /**
  *switch_me - convert any version unsigned long int to base 2 8 10 16
  *@n: the number to convert
@@ -25,13 +24,17 @@ char *switch_me(unsigned long int n, int base, int lowc)
 	return (p);
 }
 
-/* BY ROUALI AND MAMAZZAL */
 
+
+/* BY ROUALI AND MAMAZZAL */
 /**
  *_print_big_s - function handling %S
  *@list: list
  *Return: return len of string
  */
+
+
+
 
 int _print_big_s(va_list list)
 {
@@ -39,8 +42,11 @@ int _print_big_s(va_list list)
 	char *p = va_arg(list, char *);
 	char *r;
 
+
 	if (!p)
 		return (print("(null)"));
+
+
 	for (i = 0; p[i] != '\0'; i++)
 	{
 		if (p[i] > 0 && (p[i] < 32 || p[i] >= 127))
@@ -55,6 +61,7 @@ int _print_big_s(va_list list)
 		else
 			c += _putchar(p[i]);
 	}
+
 	return (c);
 }
 

@@ -1,14 +1,13 @@
 #include "main.h"
 
 /* BY ROUALI AND MAMAZZAL */
-
 /**
  * _print_bin - function that convert Dic To Bin
  *
  * @list: list
  *
  * Return: c
-*/
+ */
 
 int _print_bin(va_list list)
 {
@@ -24,14 +23,13 @@ int _print_bin(va_list list)
 
 
 /* BY ROUALI AND MAMAZZAL */
-
 /**
  * _print_octal - function that convert Dic To octal
  *
  * @list: list
  *
  * Return: c
-*/
+ */
 
 int _print_octal(va_list list)
 {
@@ -46,14 +44,13 @@ int _print_octal(va_list list)
 }
 
 /* BY ROUALI AND MAMAZZAL */
-
 /**
  * _print_low_hexa - function that convert Dic To lower hexa
  *
  * @list: list
  *
  * Return: c
-*/
+ */
 
 int _print_low_hexa(va_list list)
 {
@@ -69,14 +66,13 @@ int _print_low_hexa(va_list list)
 
 
 /* BY ROUALI AND MAMAZZAL */
-
 /**
  * _print_big_hexa - function that convert Dic To big hexa
  *
  * @list: list
  *
  * Return: c
-*/
+ */
 
 int _print_big_hexa(va_list list)
 {

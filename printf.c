@@ -1,7 +1,6 @@
 #include "main.h"
 
 /* BY ROUALI AND MAMAZZAL */
-
 /**
  * _printf - our printf version for alx PLD
  * @format: format
@@ -11,18 +10,22 @@
 int _printf(const char *format, ...)
 {
 	int size_f = 0;
-	va_list list;
+	va_list args;
 
 	if (format == NULL)
 	{
 		return (-1);
 	}
+
 	size_f = _strlen(format);
 	if (size_f <= 0)
 		return (0);
-	va_start(list, format);
-	size_f = checker(format, list);
+
+	va_start(args, format);
+	size_f = checker(format, args);
+
 	_putchar(-1);
-	va_end(list);
+	va_end(args);
+
 	return (size_f);
 }

@@ -1,12 +1,11 @@
 #include "main.h"
 
 /* BY ROUALI AND MAMAZZAL */
-
 /**
  * _print_string - function for printing string and handling %s
  * @list: list
  * Return: c wish containes string len
-**/
+ **/
 
 int _print_string(va_list list)
 {
@@ -14,5 +13,6 @@ int _print_string(va_list list)
 	int c;
 
 	c = print((str != NULL) ? str : "(null)");
+
 	return (c);
 }
