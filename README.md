@@ -2,11 +2,13 @@
 	Printf Project 
 </h1>
 <h3 align="center">
-	<a href="#%EF%B8%8F-about">About</a>
+	<a href="#%EF%B8%8F-Resources">Resources</a>
 	<span> · </span>
-	<a href="#%EF%B8%8F-usage">Usage</a>
+	<a href="#%EF%B8%8F-Requirements">Requirements</a>
 	<span> · </span>
-	<a href="#-testing">Testing</a>
+	<a href="#%EF%B8%8F-Requirements">Compilation</a>
+	<span> · </span>
+	<a href="#%EF%B8%8F-Tasks">Tasks</a>
 </h3>
 
 This is a group project for implementing a custom `printf` function with specific requirements. The `printf` function is used to produce output according to a given format. The goal is to handle various conversion specifiers and produce the expected output as described in the tasks below.
