@@ -88,15 +88,14 @@ int _is_lower(char c)
 
 char *_to_upper(char *s)
 {
-	int i = 0;
+	int i;
 
-	while (s[i] != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (_is_lower(s[i]))
 		{
 			s[i] = s[i] - 32;
 		}
-		i++;
 	}
-	return s;
+	return (s);
 }

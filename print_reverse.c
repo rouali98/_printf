@@ -17,11 +17,7 @@ int _print_rev_string(va_list list)
 
 	p = va_arg(list, char *);
 	c = _strlen(p);
-	i = c - 1;
-	while (i >= 0)
-	{
+	for (i = c - 1; i >= 0; i--)
 		_putchar(p[i]);
-		i--;
-	}
 	return (c);
 }

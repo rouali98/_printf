@@ -35,13 +35,13 @@ char *switch_me(unsigned long int n, int base, int lowc)
 
 int _print_big_s(va_list list)
 {
-	int i = 0, c = 0;
+	int i, c = 0;
 	char *p = va_arg(list, char *);
 	char *r;
 
 	if (!p)
 		return (print("(null)"));
-	while (p[i] != '\0')
+	for (i = 0; p[i] != '\0'; i++)
 	{
 		if (p[i] > 0 && (p[i] < 32 || p[i] >= 127))
 		{
@@ -53,10 +53,7 @@ int _print_big_s(va_list list)
 			c += print(r);
 		}
 		else
-		{
 			c += _putchar(p[i]);
-		}
-		i++;
 	}
 	return (c);
 }

@@ -11,24 +11,22 @@
 
 int checker(const char *s, va_list list)
 {
-	int size = 0;
-	int i = 0;
+	int size, i, deffer;
 
-	while (s[i] != '\0')
+	size = 0;
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == '%')
 		{
-			int deffer = check(s, list, &i);
+			deffer = check(s, list, &i);
 			if (deffer == -1)
 				return (-1);
+
 			size += deffer;
+			continue;
 		}
-		else
-		{
-			_putchar(s[i]);
-			size++;
-		}
-		i++;
+		_putchar(s[i]);
+		size++;
 	}
 	return (size);
 }
@@ -65,18 +63,14 @@ int check(const char *s, va_list list, int *i)
 		return (1);
 	}
 	n_format = sizeof(formats) / sizeof(formats[0]);
-	size = 0;
-	y = 0;
-	while (y < n_format)
+	for (size = y = 0; y < n_format; y++)
 	{
 		if (s[*i] == formats[y].t)
 		{
 			size = formats[y].f(list);
 			return (size);
 		}
-		y++;
 	}
-	_putchar('%');
-	_putchar(s[*i]);
+	_putchar('%'), _putchar(s[*i]);
 	return (2);
 }
