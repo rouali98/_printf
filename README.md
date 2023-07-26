@@ -4,7 +4,7 @@
 <h3 align="center">
 	<a href="#%EF%B8%8F-resources">Resources</a>
 	<span> · </span>
-	<a href="#%EF%B8%8F-Requirements">Requirements</a>
+	<a href="#%EF%B8%8F-requirements">Requirements</a>
 	<span> · </span>
 	<a href="#%EF%B8%8F-Requirements">Compilation</a>
 	<span> · </span>
