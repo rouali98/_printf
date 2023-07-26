@@ -2,7 +2,7 @@
 	Printf Project 
 </h1>
 <h3 align="center">
-	<a href="#%EF%B8%8F-Resources">Resources</a>
+	<a href="#%EF%B8%8F-resources">Resources</a>
 	<span> · </span>
 	<a href="#%EF%B8%8F-Requirements">Requirements</a>
 	<span> · </span>
