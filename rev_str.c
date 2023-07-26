@@ -17,7 +17,9 @@ int _rev_str(va_list list)
 	if (!s)
 		return (print("null"));
 	while (s[i])
+	{
 		i++;
+	}
 	while (i >= 0)
 	{
 		c += _putchar(s[i]);

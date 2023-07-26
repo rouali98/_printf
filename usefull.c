@@ -15,7 +15,6 @@ int _strlen(const char *s)
 
 	while (s[i] != '\0')
 		i++;
-
 	return (i);
 }
 
@@ -37,7 +36,6 @@ int print(char *s)
 		_putchar(s[i]);
 		i++;
 	}
-
 	return (i);
 }
 
@@ -53,12 +51,14 @@ int print(char *s)
 
 int _put_string(char *str)
 {
-	register int i;
+	int i = 0;
 
-	i = 0;
 	while (str[i] != '\0')
-		_putchar(str[i++]);
-	return (i);
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	return i;
 }
 
 /* BY ROUALI AND MAMAZZAL */
@@ -88,9 +88,8 @@ int _is_lower(char c)
 
 char *_to_upper(char *s)
 {
-	int i;
+	int i = 0;
 
-	i = 0;
 	while (s[i] != '\0')
 	{
 		if (_is_lower(s[i]))
@@ -99,5 +98,5 @@ char *_to_upper(char *s)
 		}
 		i++;
 	}
-	return (s);
+	return s;
 }

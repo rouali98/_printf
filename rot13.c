@@ -45,19 +45,23 @@ int _print_rot13(va_list list)
 	char R[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	p = va_arg(list, char *);
-
 	j = 0;
 	while (p[j])
 	{
 		if (p[j] < 'A' || (p[j] > 'Z' && p[j] < 'a') || p[j] > 'z')
+		{
 			_putchar(p[j]);
+		}
 		else
 		{
 			i = 0;
 			while (i <= 52)
 			{
 				if (p[j] == r[i])
+				{
 					_putchar(R[i]);
+					break;
+				}
 				i++;
 			}
 		}

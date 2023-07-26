@@ -12,10 +12,9 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int i;
+	int i = 0;
 
-	i = 0;
-	while ( s1[i] != '\0')
+	while (s1[i] != '\0')
 	{
 		if (s1[i] != s2[i])
 			return (s1[i] - s2[i]);
@@ -40,6 +39,7 @@ int _print_pointer(va_list list)
 	int c;
 
 	p = _magic(va_arg(list, unsigned long int), 16);
+
 	if (!_strcmp(p, "0"))
 		return (print("(nil)"));
 	c = print("0x");

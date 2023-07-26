@@ -16,6 +16,5 @@ int _print_char(va_list list)
 
 	deffer = va_arg(list, int);
 	_putchar(deffer);
-
 	return (1);
 }

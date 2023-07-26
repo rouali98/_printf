@@ -19,6 +19,9 @@ int _print_rev_string(va_list list)
 	c = _strlen(p);
 	i = c - 1;
 	while (i >= 0)
-		_putchar(p[i--]);
+	{
+		_putchar(p[i]);
+		i--;
+	}
 	return (c);
 }

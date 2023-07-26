@@ -24,14 +24,11 @@ char *_magic(long int n, int base)
 	}
 	p = &buffer[49];
 	*p = '\0';
-
 	do {
 		*--p = arr[nbr % base];
 		nbr /= base;
 	} while (nbr != 0);
-
 	if (sign)
 		*--p = sign;
-
 	return (p);
 }

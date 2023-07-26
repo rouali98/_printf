@@ -11,16 +11,18 @@
 int _printf(const char *format, ...)
 {
 	int size_f = 0;
-	va_list args;
+	va_list list;
 
 	if (format == NULL)
+	{
 		return (-1);
+	}
 	size_f = _strlen(format);
 	if (size_f <= 0)
 		return (0);
-	va_start(args, format);
-	size_f = checker(format, args);
+	va_start(list, format);
+	size_f = checker(format, list);
 	_putchar(-1);
-	va_end(args);
+	va_end(list);
 	return (size_f);
 }

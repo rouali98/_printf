@@ -17,6 +17,5 @@ int _print_int(va_list list)
 
 	p = _magic(va_arg(list, int), 10);
 	c = print((p != NULL) ? p : "NULL");
-
 	return (c);
 }

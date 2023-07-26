@@ -65,7 +65,8 @@ int check(const char *s, va_list list, int *i)
 		return (1);
 	}
 	n_format = sizeof(formats) / sizeof(formats[0]);
-	size = y = 0;
+	size = 0;
+	y = 0;
 	while (y < n_format)
 	{
 		if (s[*i] == formats[y].t)
@@ -75,6 +76,7 @@ int check(const char *s, va_list list, int *i)
 		}
 		y++;
 	}
-	_putchar('%'), _putchar(s[*i]);
+	_putchar('%');
+	_putchar(s[*i]);
 	return (2);
 }
