@@ -13,7 +13,8 @@
 
 This is a group project for implementing a custom `printf` function with specific requirements. The `printf` function is used to produce output according to a given format. The goal is to handle various conversion specifiers and produce the expected output as described in the tasks below.
 
-<p align="center" style="font-family: Futura, sans-serif; font-weight: bold;">Created By ROUALI & MAMAZZAL</p>
+<!-- Add the following HTML comment with CSS styling -->
+<!-- <p style="text-align: center; font-family: Futura, sans-serif; font-weight: bold;">Created By ROUALI & MAMAZZAL</p> -->
 
 > **Created By ROUALI & MAMAZZAL**
 
