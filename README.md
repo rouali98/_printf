@@ -15,8 +15,6 @@ This is a group project for implementing a custom `printf` function with specifi
 
 >**Created By ROUALI & MAMAZZAL**
 
-> **Created By ROUALI & MAMAZZAL**
-
 ## Resources
 Please read or watch the following resources before starting the project:
 
