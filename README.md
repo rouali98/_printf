@@ -19,8 +19,8 @@ This is a group project for implementing a custom `printf` function with specifi
 Please read or watch the following resources before starting the project:
 
 - [Secrets of printf](https://www.academia.edu/10297206/Secrets_of_printf)
-- Group Projects <h4>concept page</h4>(group-projects)
-- [Flowcharts concept page](flowcharts)
+- Group Projects concept page (Don’t forget to read this)
+- Flowcharts concept page
 
 ## Requirements
 
