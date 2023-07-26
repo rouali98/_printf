@@ -4,8 +4,6 @@ This is a group project for implementing a custom `printf` function with specifi
 
 > **Created By ROUALI && MAMAZZAL**
 
-This is a group project for implementing a custom `printf` function with specific requirements. The `printf` function is used to produce output according to a given format. The goal is to handle various conversion specifiers and produce the expected output as described in the tasks below.
-
 ## Resources
 Please read or watch the following resources before starting the project:
 
